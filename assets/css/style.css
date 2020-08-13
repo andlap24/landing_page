@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Container */
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -39,13 +40,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
-.intro__inner {
+.intro-inner {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
 }
 
-.intro__title {
+.intro-title {
     font-size: 100px;
     font-weight: 700;
     color: #fff;
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
-.intro__title::after {
+.intro-title::after {
     content: "";
     display: block;
     width: 60px;
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 50px auto 0;
 }
 
-.intro__subtitle {
+.intro-subtitle {
     margin-bottom: 15px;
     font-family: 'Kaushan Script', cursive;
     font-size: 60px;
@@ -83,12 +84,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-.header__inner {
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header__logo {
+.header-logo {
     font-size: 35px;
     font-weight: 700;
     color: #333;
@@ -102,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.nav__link {
+.nav-link {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.2s linear;
 }
 
-.nav__link::after {
+.nav-link::after {
     content: "";
     display: block;
     width: 100%;
@@ -126,10 +127,10 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.2s linear;
 }
 
-.nav__link:hover {
+.nav-link:hover {
     color: #fce38a;
 }
 
-.nav__link:hover::after{
+.nav-link:hover::after{
     opacity: 1;
 }
