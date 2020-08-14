@@ -160,10 +160,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Slider */
 
 .slider {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.slider-inner {
     display: flex;
     justify-content: space-between;
 }
-.slider_item {
-    width: 20%;
 
+.slider-item {
+    position: relative;
+    width: 20%;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-top: 2px solid #fff;
+    opacity: 0.7;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+.slider-num {
+    font-style: 24px;
+    font-weight: 700;
 }
