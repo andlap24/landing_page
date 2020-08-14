@@ -24,53 +24,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* Intro */
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 100%;
-    height: 100vh;
-
-    background:
-    url("../images/intro.jpg") center
-    no-repeat;
-    background-size: cover;
-}
-
-.intro-inner {
-    width: 100%;
-    max-width: 880px;
-    margin: 0 auto;
-}
-
-.intro-title {
-    font-size: 100px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    line-height: 1.1;
-}
-
-.intro-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #fff;
-    margin: 50px auto 0;
-}
-
-.intro-subtitle {
-    margin-bottom: 15px;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 60px;
-    color: #fff;
-    text-align: center;
-}
-
 /* Header */
 
 .header {
@@ -133,4 +86,84 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link:hover::after{
     opacity: 1;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background:
+    url("../images/intro.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+
+.intro-inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.intro-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 50px auto;
+}
+
+.intro-subtitle {
+    margin-bottom: 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Button*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .2s linear, 
+         border-color .2s linear;
+    }
+
+.btn:hover {
+    color: #fce38a;
+    border-color: #fce38a;
+}
+
+/* Slider */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+.slider_item {
+    width: 20%;
+
 }
