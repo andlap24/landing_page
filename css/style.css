@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #fff;
+    background-color: #fce38a;
     margin: 50px auto;
 }
 
@@ -196,13 +196,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
     padding: 80px 0;
+    background-color: #fafbf6;
+}
+
+.section--devices {
+    padding-bottom: 0;
+    background:
+    url("../assets/mountain.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .section-header {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 0 auto 40px;
+    margin-bottom: 0 auto 50px;
     text-align: center;
+
 }
 
 .section-suptitle {
@@ -238,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    background-color: #fafbf6;
 }
 
 .about-item {
@@ -284,4 +294,87 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     transform: translate3d(0, -50%, 0);
     transition: opacity .2s linear;
+}
+
+/* Statistics */
+
+.statistics {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat-item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    border-left: 1px solid #b5eae0;
+    text-align: center;
+    color: #fff;
+}
+
+.stat-item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stat-count {
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+}
+
+.services-item {
+    flex: 1 1 0;
+    padding-left: 70px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.services-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.services-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services-text {
+    color: #999;
+}
+
+/* Devices */
+
+.devices {
+    width: 100%;
+    /*max-width: 600px;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices-item {
+    display: block;
+}
+
+.devices-item--iphone {
+    width: 330px;
+    position: absolute;
 }
